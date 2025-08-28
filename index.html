@@ -24,50 +24,70 @@
         <div class="divider"></div>
 
         <main>
-            <div id="a">
+            <div>
                 <section class="1-propriedade">
            <h2>A Regra da Cascata</h2>
-                <p>Explicação sobre como o CSS aplica os estilos com base na ordem das regras, importância e origem.</p>
+                <ul>
+                    <li>Ordem de prioridade da cascata (da mais fraca para a mais forte)</li>
+                </ul> 
+                    <br>
+                <ul>
+
+                    <li>Especificidade do seletor:</li>
+                    <p>Menor especificidade perde para maior (tag < classe < id).</p>
+
+                    <li>Importância:</li>
+                    <p>Regras com !important ganham de outras, exceto se houver um !important com maior especificidade.</p>
+
+                    <li>Ordem no código:</li>
+                    <p>Se tudo estiver empatado, vence a regra que aparece por último no CSS.</p>
+
+                </ul>
                 </section>
             </div>
-            <div id="b">
+            <div>
                 <section class="2-propriedade">
                 <h2>Especificidade no CSS</h2>
                     <ul>
-                        <li>Especificidade de tag</li>
-                        <p></p>
+                        <li>Especificidade de tag:</li>
+                        <p>Baixíssima prioridade.</p>
 
-                        <li>Especificidade de classe</li>
-                        <p></p>
+                        <li>Especificidade de classe:</li>
+                        <p>Prioridade maior que tag, mas menor que ID.</p>
 
-                        <li>Especificidade de ID</li>
-                        <p></p>
+                        <li>Especificidade de ID:</li>
+                        <p>Prioridade mais alta entre seletores comuns.</p>
 
-                        <p></p>
                     </ul>
                 </section>
             </div>
-            <div id="c">   
+            <div>   
                 <section class="3-propriedade">
                 <h2>Combinação de Seletores</h2>
                     <h3>Seletores Descendentes</h3>
                         <ul>
                             <li>Exemplo: .primeiro h1</li>
-                            <p></p>
+                            <p>seleciona apenas o filho do h1</p>
                         </ul>
+
+                        <br>
+
                     <h3>Seletores de Filho Direto</h3>
                         <ul>
                             <li>Exemplo: .primeira > h1</li>
-                            <p></p>
+                            <p>Seleciona o h1 que é filho direto de um elemento com a classe .primeira.</p>
                         </ul>
+
+                        <br>
+
                     <h3>Seletores Adjacentes</h3>
                         <ul>
                             <li>Exemplo: .primeira h1 + h1</li>
-                            <p></p>
+                            <p>Selecione o que vem logo após outro  dentro de .primeira.</p>
                         </ul>
                 </section>
             </div> 
-            <div id="d">
+            <div>
                 <section class="4-propriedade">
                 <h2>Pseudo-classes Estruturais</h2>
                     <h3>Primeiro e Último Elemento</h3>
@@ -76,6 +96,8 @@
                             <li>last-child</li>
                         </ul>
 
+                        <br>
+
                     <h3>Elementos por Posição</h3>
                         <ul>
                             <li>nth-child(n)</li>
@@ -83,77 +105,110 @@
                         </ul>
                 </section>
             </div>
-            <div id="f">
+            <div>
                 <section class="5-propriedade">
                 <h2>Compreendendo o Display</h2>
                     <h3>Display Inline</h3>
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>Padding</li>
+                            <li>Margin</li>
+                            <li>Border</li>
+                            <li>Funcionam apenas na horizontal</li>
+                            <li>So ocupa o espaço que precisa para existir</li>
                             <li></li>
                         </ul>
+
+                        <br>
+
                     <h3>Display Block</h3>
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>Width</li>
+                            <li>Height</li>
+                            <li>Padding</li>
+                            <li>Margin</li>
+                            <li>Border</li>
                         </ul>
                 </section>
             </div>
-            <div id="g">
+            <div>
                 <section class="6-propriedade">
                 <h2>Elementos Inline e Block</h2>
                     <h3>Elementos naturalmente inline</h3>
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>a</li>
+                            <li>Em</li>
+                            <li>strong</li>
+                            <li>span</li>
+                            <li>img</li>
+                            <li>button</li>
+                            <li>input</li>
+                            
                         </ul>
+
+                        <br>
+
                     <h3>Elementos naturalmente block</h3>
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>h1</li>
+                            <li>p</li>
+                            <li>div</li>
+                            <li>section</li>
+                            <li>main</li>
+                            <li>header</li>
+                            <li>nav</li>
+                            <li>ul</li>
+                            <li>ol</li>
+                            
                         </ul>
                 </section>
             </div>
-            <div id="h">
+            <div>
                 <section class="7-propriedade">
                 <h2>Espaçamento com Box Model</h2>
 
                     <h3>Margin</h3>
-                        <p></p>
+                        <p>Cria espaço ao redor do elemento, entre ele e outros elementos.Não afeta o tamanho da caixa, apenas o posicionamento.</p>
+                    
+                    <br>
 
                     <h3>Padding</h3>
-                        <p></p>
+                        <p>Cria espaço entre o conteúdo e a borda do elemento.Aumenta o tamanho visual da caixa, exceto se usar box-sizing: border-box.</p>
+
+                    <br>
 
                     <h3>Border</h3>
-                        <p></p>
+                        <p>Define uma linha ao redor do conteúdo + padding.Pode ter cor, estilo e espessura.Também aumenta o tamanho da caixa, a menos que use border-box</p>
                 </section>
             </div>
-            <div id="i">
+            <div>
                 <section class="8-propriedade">
-                <h2>Espaçamento com Box Model</h2>
-                             
-                        
-
+                <h2>shorthand</h2>
+                    <p>As três propriedades (margin, padding, border-width) aceitam até 4 valores na mesma ordem: TOP | RIGHT | BOTTOM | LEFT  <p>
                     
+                        <ul>
+                            <p >ex-margin:</p>
+                            <li>margin-top</li>
+                            <li>margin-right</li>
+                            <li>margin-bottom</li>
+                            <li>margin-left</li>
+
+                            <p >ex-borer:</p>
+                            <li>borer-top</li>
+                            <li>borer-right</li>
+                            <li>borer-bottom</li>
+                            <li>borer-left</li>
+
+                            <p >ex-pedding</p>
+                            <li>pedding-top</li>
+                            <li>pedding-righ</li>
+                            <li>pedding-bottom</li>
+                            <li>pedding-left</li>
+                        </ul>
+
+                        <br>
+
+                    <h3>Detalhes por quantidade de valores:</h3>
+                        
 
                 </section>
             </div> 
