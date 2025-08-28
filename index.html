@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/root.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
     <title>projeto-3bimestre</title>
 </head>
 <body>
@@ -16,37 +24,117 @@
         <div class="divider"></div>
 
         <main>
-            <section class="1-propriedade">
+            <div id="a">
+                <section class="1-propriedade">
            <h2>A Regra da Cascata</h2>
-                <p></p>
-            </section>
-
-            <section class="2-propriedade">
+                <p>Explicação sobre como o CSS aplica os estilos com base na ordem das regras, importância e origem.</p>
+                </section>
+            </div>
+            <div id="b">
+                <section class="2-propriedade">
                 <h2>Especificidade no CSS</h2>
-                    <p></p>
-            </section>
+                    <ul>
+                        <li>Especificidade de tag</li>
+                        <p></p>
 
-            <section class="3-propriedade">
+                        <li>Especificidade de classe</li>
+                        <p></p>
+
+                        <li>Especificidade de ID</li>
+                        <p></p>
+
+                        <p></p>
+                    </ul>
+                </section>
+            </div>
+            <div id="c">   
+                <section class="3-propriedade">
                 <h2>Combinação de Seletores</h2>
-                    <p></p>
-            </section>
-
-            <section class="4-propriedade">
+                    <h3>Seletores Descendentes</h3>
+                        <ul>
+                            <li>Exemplo: .primeiro h1</li>
+                            <p></p>
+                        </ul>
+                    <h3>Seletores de Filho Direto</h3>
+                        <ul>
+                            <li>Exemplo: .primeira > h1</li>
+                            <p></p>
+                        </ul>
+                    <h3>Seletores Adjacentes</h3>
+                        <ul>
+                            <li>Exemplo: .primeira h1 + h1</li>
+                            <p></p>
+                        </ul>
+                </section>
+            </div> 
+            <div id="d">
+                <section class="4-propriedade">
                 <h2>Pseudo-classes Estruturais</h2>
-                    <p></p>
-            </section>
+                    <h3>Primeiro e Último Elemento</h3>
+                        <ul>
+                            <li>first-child</li>
+                            <li>last-child</li>
+                        </ul>
 
-            <section class="5-propriedade">
+                    <h3>Elementos por Posição</h3>
+                        <ul>
+                            <li>nth-child(n)</li>
+                            <li>nth-of-type(n)</li>
+                        </ul>
+                </section>
+            </div>
+            <div id="f">
+                <section class="5-propriedade">
                 <h2>Compreendendo o Display</h2>
-                    <p></p>
-            </section>
-
-            <section class="6-propriedade">
+                    <h3>Display Inline</h3>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    <h3>Display Block</h3>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                </section>
+            </div>
+            <div id="g">
+                <section class="6-propriedade">
                 <h2>Elementos Inline e Block</h2>
-                    <p></p>
-            </section>
-
-            <section class="7-propriedade">
+                    <h3>Elementos naturalmente inline</h3>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    <h3>Elementos naturalmente block</h3>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                </section>
+            </div>
+            <div id="h">
+                <section class="7-propriedade">
                 <h2>Espaçamento com Box Model</h2>
 
                     <h3>Margin</h3>
@@ -57,13 +145,25 @@
 
                     <h3>Border</h3>
                         <p></p>
-            </section>
+                </section>
+            </div>
+            <div id="i">
+                <section class="8-propriedade">
+                <h2>Espaçamento com Box Model</h2>
+                             
+                        
 
-            <section class="8-propriedade">
-                <h2></h2>
-                    <p></p>
-            </section>
+                    
+
+                </section>
+            </div> 
         </main>
+
+        <div class="divider"></div>
+
+        <strong>Caso queira se aprofundar mais:</strong>
+        <a href="https://pt.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">CSS</a>
+        <a href="#page">Voltar para o início</a>
     </div>
 </body>
 </html>
